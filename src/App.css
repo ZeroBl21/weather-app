@@ -1,0 +1,9 @@
+.App {
+  background-color: var(--veryDarkBlue);
+  color: var(--softBlue);
+  font-family: 'Outfit', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
