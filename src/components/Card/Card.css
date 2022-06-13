@@ -1,0 +1,26 @@
+.card {
+  background: rgba(56, 81, 213, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.card__section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.card__section > article {
+  flex: 1;
+}
+
+.card__divider {
+  flex: 0.01;
+  width: 1px;
+  background: rgba(56, 81, 213, 0.25);
+}
