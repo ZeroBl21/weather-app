@@ -1,0 +1,41 @@
+.weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #141c27 url('../../assets/sunny.webp') no-repeat center/cover;
+  position: relative;
+  min-width: min(80%, 320px);
+  max-width: 350px;
+  height: 600px;
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  filter: drop-shadow(0 20px 13px rgb(255 255 255 / 0.03))
+    drop-shadow(0 8px 5px rgb(255 255 255 / 0.08));
+}
+
+.weather__title {
+  text-align: center;
+}
+
+.sunny {
+  background: url('../../assets/sunny.webp') no-repeat center/cover;
+}
+
+.night {
+  background: url('../../assets/night.webp') no-repeat center/cover;
+}
+
+form {
+  display: flex;
+}
+
+form > input {
+  flex: 1;
+  padding: 0.1rem 0.3rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+
+.loading {
+  text-align: center;
+}
