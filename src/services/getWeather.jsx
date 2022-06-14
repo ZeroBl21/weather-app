@@ -2,7 +2,6 @@ import { BASE_URL, API_KEY } from './settings'
 
 const extractData = (apiResponse) => {
   if (!apiResponse?.error) {
-    console.log(apiResponse)
     const { name, country } = apiResponse.location
     const { temp_c, humidity, vis_km, is_day, condition } = apiResponse.current
 
