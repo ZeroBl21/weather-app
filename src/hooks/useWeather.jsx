@@ -6,7 +6,6 @@ export const useWeather = ({ keyword } = { keyword: null }) => {
   const [loading, setLoading] = useState(false)
 
   const city = keyword || localStorage.getItem('lastKeyword') || 'Santiago'
-  console.log(city, localStorage.getItem('lastKeyword'), keyword)
 
   useEffect(() => {
     setLoading(true)
