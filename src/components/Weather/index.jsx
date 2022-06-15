@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useWeather } from '../../hooks/useWeather'
 import Card from '../Card'
+import Loader from '../Loader'
 import './Weather.css'
 
 const Weather = () => {
@@ -20,7 +21,7 @@ const Weather = () => {
     <div className={`weather ${time?.is_day === 0 ? 'night' : ''}`}>
       <h2 className='weather__title'>Weather App</h2>
       {loading || time === undefined ? (
-        <h2 className='loading'>Loading</h2>
+        <Loader />
       ) : (
         <>
           <Card {...time} />
