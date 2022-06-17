@@ -19,7 +19,7 @@ const Weather = () => {
 
   return (
     <div className={`weather ${time?.is_day === 0 ? 'night' : ''}`}>
-      <h2 className='weather__title'>Weather App</h2>
+
       {loading || time === undefined ? (
         <Loader />
       ) : (
