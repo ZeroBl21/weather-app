@@ -2,10 +2,10 @@ import { BASE_URL, API_KEY } from './settings'
 
 const extractData = (apiResponse) => {
   if (!apiResponse?.error) {
-    const { name, country } = apiResponse.location
-    const { temp_c, humidity, vis_km, is_day, condition } = apiResponse.current
+    const { name, country, localtime } = apiResponse.location
+    const { temp_c, humidity, vis_km, is_day, condition, feelslike_c } = apiResponse.current
 
-    return { name, country, temp_c, humidity, vis_km, is_day, condition }
+    return { name, country, temp_c, humidity, vis_km, is_day, condition, localtime, feelslike_c }
   }
 }
 
